@@ -1184,7 +1184,7 @@ html.js .hdr .menu-btn,html.js .hdr-r .menu-btn{display:inline-flex!important;al
 .hdr .menu-btn:hover{color:var(--link)}
 .sheet{display:none!important}
 
-.smap{position:fixed;inset:0;z-index:80;overflow:auto;background:#F6F4EF;
+.smap{position:fixed;inset:0;z-index:80;overflow:auto;background:#FFFFFF;
   background-image:radial-gradient(60% 50% at 85% 0%,rgba(10,106,150,.07),transparent 70%),radial-gradient(50% 40% at 0% 100%,rgba(10,106,150,.05),transparent 70%)}
 .smap[hidden]{display:none}
 .smap-in{max-width:1280px;margin:0 auto;padding:22px clamp(16px,4vw,48px) 64px}
@@ -1603,13 +1603,13 @@ html.is-paused .m-reader .rd-ant{animation:none}
    Loaded after every other stylesheet; V3.1 is untouched.
    ========================================================================== */
 :root, :root[data-theme="dark"], :root[data-theme="light"]{
-  --bg:#F6F4EF; --surface:#FFFFFF; --ink:#141619; --text:#3A3D42; --muted:#6E7076;
+  --bg:#FFFFFF; --surface:#FFFFFF; --ink:#141619; --text:#3A3D42; --muted:#6E7076;
   --line:#E4E0D7; --line-2:#CFC9BD; --grid:transparent; --link:#0A6A96; --signal:#0A6A96;
   --accent:#1593CF; --wfi:#E8F1F5; --lps:#B4473C; --draft:#8A4B12; --draftbg:#F7ECDD; --focus:#0A6A96;
   --abyss:#151618; --navy:#1E2023; --ink-text:#F1EFEA; --ink-body:#CFCCC5; --ink-muted:#99968F;
   --ink-line:rgba(241,239,234,.13); --ink-signal:#4DB3E6; --ink-lps:#F0857A;
   --ramp-0:#151618; --ramp-1:#2F6F93; --ramp-2:#4DB3E6; --ramp-3:#F1EFEA;
-  --tint:#EDE9E0;
+  --tint:#F2F5F8;
   --f-sans:'IBM Plex Sans','IBM Plex Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
   --f-kr:var(--f-sans);
   --f-mono:'IBM Plex Sans','IBM Plex Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;
@@ -1620,7 +1620,7 @@ html.is-paused .m-reader .rd-ant{animation:none}
   color-scheme:light;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#F6F4EF; --surface:#FFFFFF; --ink:#141619; --text:#3A3D42; --muted:#6E7076;
+  --bg:#FFFFFF; --surface:#FFFFFF; --ink:#141619; --text:#3A3D42; --muted:#6E7076;
   --line:#E4E0D7; --line-2:#CFC9BD; --link:#0A6A96; --signal:#0A6A96; --accent:#1593CF; --wfi:#E8F1F5;
   --lps:#B4473C; --focus:#0A6A96; color-scheme:light}}
 /* this proposal is light-only; the theme toggle is hidden */
@@ -1638,11 +1638,11 @@ html.is-paused .m-reader .rd-ant{animation:none}
   background:var(--abyss)}
 /* light again: vision, coming-soon pages, IR/PR, contact */
 #hero[data-surface="ink"],#platform[data-surface="ink"],#reader[data-surface="ink"],#ariascan[data-surface="ink"],#analyzer[data-surface="ink"],#milestones[data-surface="ink"],#proof[data-surface="ink"],#contact[data-surface="ink"]{
-  --bg:#F6F4EF; --surface:#FFFFFF; --ink:#141619; --text:#3A3D42; --muted:#6E7076;
+  --bg:#FFFFFF; --surface:#FFFFFF; --ink:#141619; --text:#3A3D42; --muted:#6E7076;
   --line:#E4E0D7; --line-2:#CFC9BD; --link:#0A6A96; --signal:#0A6A96; --accent:#1593CF; --wfi:#E8F1F5;
-  --lps:#B4473C; --focus:#0A6A96; --tint:#EDE9E0; --p-endo:#1C6E9C;--p-myco:#2E7D62;--p-virus:#6A5AA8;
+  --lps:#B4473C; --focus:#0A6A96; --tint:#F2F5F8; --p-endo:#1C6E9C;--p-myco:#2E7D62;--p-virus:#6A5AA8;
   color-scheme:light; background:var(--bg); color:var(--text)}
-#milestones[data-surface="ink"],#contact[data-surface="ink"]{background:#FFFFFF;--bg:#FFFFFF;--surface:#F6F4EF}
+#milestones[data-surface="ink"],#contact[data-surface="ink"]{background:#FFFFFF;--bg:#FFFFFF;--surface:#F5F7F9}
 #proof[data-surface="ink"]{background:#FFFFFF;--bg:#FFFFFF}
 
 /* ---------- type ---------- */
@@ -1777,6 +1777,17 @@ thead th,caption{text-transform:none!important}
 #hero .hero-stage > .wrap{position:relative;z-index:2}
 #hero .hv .display{max-width:9.5em}
 #hero .hv-v{max-width:24em}
+
+/* 1116: white page; footer in the logo's colours (navy 001634 wordmark · cyan 00B7E6 · blue 006699) */
+.foot,.foot[data-surface="ink"]{
+  --bg:#001634; --surface:#0A2545; --ink:#FFFFFF; --text:#CFE6F4; --muted:#8FB3CF; --line:rgba(207,230,244,.16);
+  --link:#7FE3FF; --focus:#7FE3FF;
+  position:relative; color:var(--text);
+  background:linear-gradient(180deg,#00203F 0%,#001634 100%)}
+.foot::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;
+  background:linear-gradient(90deg,#00B7E6 0 82%,#006699 82% 100%)}
+.foot a{color:#FFFFFF}
+.foot a:hover{color:#7FE3FF}
 </style>
 </head><body>
 <div id="top" class="site" lang="ko" data-draft="off">
