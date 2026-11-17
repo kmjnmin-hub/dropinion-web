@@ -1342,6 +1342,11 @@ html.menu-open{overflow:hidden}
 .loc-map .loc-static{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;border-radius:inherit}
 .loc-map .loc-kakao{z-index:1;background:#fff}
 .loc-map .loc-fb.over{z-index:2}
+/* 1117d talent: icon + keyword only */
+.tl-list li{justify-items:center;text-align:center;padding:30px 18px 26px;gap:14px}
+.tl-ic{width:56px;height:56px;fill:none;stroke:#006699;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.tl-ic .a{stroke:#00B7E6}
+.tl-k span{margin-top:4px}
 /* ---- module: hero ---- */
 .m-hero{--bc:var(--ink-signal);margin:0;padding:14px;border:1px solid var(--ink-line);background:rgba(0,13,31,.55);display:grid;gap:10px;min-width:0;align-self:center}
 .m-hero .hx-top{position:relative;width:100%;aspect-ratio:4/3;overflow:hidden;background:#101317;outline:1px solid var(--ink-line)}
@@ -2940,14 +2945,13 @@ thead th,caption{text-transform:none!important}
   <div class="wrap">
     <header class="sec-head">
       <h2 id="tl-h">한 방울의 차이를 <b>함께 만드는 사람</b></h2>
-      <p class="lede">드로피니언은 작은 팀이 화학공학 · 분자생물학 · 광학 · 소프트웨어 · 규제를 하나로 엮어 새로운 시험법을 만드는 회사입니다. 그래서 다음과 같은 동료를 찾습니다.</p>
     </header>
     <ol class="tl-list">
-      <li><p class="tl-n mono">01</p><p class="tl-k">근거로 말하는 사람 <span lang="en">Evidence</span></p><p>데이터와 문헌으로 판단하고, 모르는 것은 모른다고 말합니다. 좋은 결과보다 재현되는 결과를 먼저 봅니다.</p></li>
-      <li><p class="tl-n mono">02</p><p class="tl-k">현장을 아는 사람 <span lang="en">Field-first</span></p><p>QC 실험실과 공정 현장의 하루에서 문제를 찾고, 쓰는 사람의 입장에서 답을 설계합니다.</p></li>
-      <li><p class="tl-n mono">03</p><p class="tl-k">경계를 넘는 사람 <span lang="en">Cross-disciplinary</span></p><p>자기 전공 밖의 언어를 배우고, 다른 분야의 동료와 같은 문제를 함께 풉니다.</p></li>
-      <li><p class="tl-n mono">04</p><p class="tl-k">끝까지 책임지는 사람 <span lang="en">Ownership</span></p><p>시제품에서 멈추지 않고 밸리데이션 기준을 통과할 때까지, 내가 만든 것을 끝까지 검증합니다.</p></li>
-      <li><p class="tl-n mono">05</p><p class="tl-k">함께 성장하는 사람 <span lang="en">Teamwork</span></p><p>지식을 나누고 서로의 일을 존중하며, 회사와 함께 자신의 전문성을 키워 갑니다.</p></li>
+      <li><svg class="tl-ic" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 38V10M8 38h32"/><path d="M14 31v-6M21 31V19M28 31v-9"/><circle class="a" cx="33" cy="16" r="6"/><path class="a" d="M37.5 20.5 42 25"/></svg><p class="tl-k">근거로 말하는 사람 <span lang="en">Evidence</span></p></li>
+      <li><svg class="tl-ic" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 40V22l9 5v-5l9 5v-5l9 5V10h7v30z"/><path d="M6 40h36"/><path class="a" d="M14 34h4M22 34h4M30 34h4"/></svg><p class="tl-k">현장을 아는 사람 <span lang="en">Field-first</span></p></li>
+      <li><svg class="tl-ic" viewBox="0 0 48 48" aria-hidden="true"><circle cx="18" cy="20" r="10"/><circle cx="30" cy="20" r="10"/><circle class="a" cx="24" cy="30" r="10"/></svg><p class="tl-k">경계를 넘는 사람 <span lang="en">Cross-disciplinary</span></p></li>
+      <li><svg class="tl-ic" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6 38 11v10c0 9-6 16-14 20C16 37 10 30 10 21V11z"/><path class="a" d="m17 23 5 5 9-10"/></svg><p class="tl-k">끝까지 책임지는 사람 <span lang="en">Ownership</span></p></li>
+      <li><svg class="tl-ic" viewBox="0 0 48 48" aria-hidden="true"><circle cx="16" cy="16" r="5"/><circle cx="32" cy="16" r="5"/><path d="M6 36c0-6 4.5-10 10-10s10 4 10 10"/><path d="M22 36c0-6 4.5-10 10-10s10 4 10 10"/><circle class="a" cx="24" cy="10" r="3"/></svg><p class="tl-k">함께 성장하는 사람 <span lang="en">Teamwork</span></p></li>
     </ol>
   </div>
 </section>
