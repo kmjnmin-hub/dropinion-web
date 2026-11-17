@@ -1347,6 +1347,11 @@ html.menu-open{overflow:hidden}
 .tl-ic{width:56px;height:56px;fill:none;stroke:#006699;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .tl-ic .a{stroke:#00B7E6}
 .tl-k span{margin-top:4px}
+/* 1117e talent: English first and emphasized, Korean below; no card outline or accent line */
+.tl-list li{box-shadow:none!important;border-radius:0;background:none;padding:18px 8px}
+.tl-list li::before{display:none}
+.tl-k{display:flex;flex-direction:column-reverse;align-items:center;gap:6px;font-size:.9375rem;font-weight:500;color:var(--muted)}
+.tl-k span{display:block;margin:0;font-size:1.3125rem;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
 /* ---- module: hero ---- */
 .m-hero{--bc:var(--ink-signal);margin:0;padding:14px;border:1px solid var(--ink-line);background:rgba(0,13,31,.55);display:grid;gap:10px;min-width:0;align-self:center}
 .m-hero .hx-top{position:relative;width:100%;aspect-ratio:4/3;overflow:hidden;background:#101317;outline:1px solid var(--ink-line)}
