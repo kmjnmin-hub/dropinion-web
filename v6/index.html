@@ -1553,6 +1553,9 @@ html.menu-open{overflow:hidden}
 .mq-set img:hover{filter:none;opacity:1}
 @keyframes mq-run{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion:reduce){.mq-track{animation:none}.mq-set[aria-hidden]{display:none}.mq-set{flex-wrap:wrap}}
+/* 1118h: V06 — body text spans the content width on every page (hero and page-banner copy keep their width so they stay clear of the photos) */
+.v6 main > section:not(#hero):not(#pv) :is(p,.lede,.sec-head,.need-prose,.vision-prose,.prose,.caveat,.prc-note,.st-close,.ap-head){max-width:none}
+.v6 main > section:not(#hero):not(#pv) .st-line li div > p:last-child,.v6 .faq-list details p{max-width:none}
 /* ---- module: hero ---- */
 .m-hero{--bc:var(--ink-signal);margin:0;padding:14px;border:1px solid var(--ink-line);background:rgba(0,13,31,.55);display:grid;gap:10px;min-width:0;align-self:center}
 .m-hero .hx-top{position:relative;width:100%;aspect-ratio:4/3;overflow:hidden;background:#101317;outline:1px solid var(--ink-line)}
